@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced HTML5 Page & Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    header, section, footer {
+      margin-bottom: 40px;
+    }
+    table, th, td {
+      border: 1px solid #333;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+    fieldset {
+      margin-top: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin: 8px 0 4px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HTML5 Content & Form Showcase</h1>
+    <p>This page demonstrates effective use of lists, tables, media, and form validation using HTML5.</p>
+  </header>
+
+  <section>
+    <h2>📋 Favorite Programming Languages (List)</h2>
+    <ul>
+      <li>Python</li>
+      <li>JavaScript</li>
+      <li>HTML & CSS</li>
+      <li>Java</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📊 Learning Schedule (Table)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Topic</th>
+          <th>Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>Web Development</td>
+          <td>2 hours</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>Python</td>
+          <td>2 hours</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>Database</td>
+          <td>2 hours</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>🎥 Media Showcase</h2>
+    <p>Below is a sample video and audio embedded using HTML5:</p>
+    <video width="320" height="240" controls>
+      <source src="nature-video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <br><br>
+    <audio controls>
+      <source src="Ian Post - DuDa.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <section>
+    <h2>📝 Registration Form</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <label for="fname">First Name *</label>
+        <input type="text" id="fname" name="fname" required placeholder="e.g., Tatu" autocomplete="given-name" minlength="2" />
+
+        <label for="lname">Last Name *</label>
+        <input type="text" id="lname" name="lname" required placeholder="e.g., Changaya" autocomplete="family-name" minlength="2" />
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required placeholder="e.g., tatuchangaya137@gmail.com" autocomplete="email" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+        <label for="username">Username *</label>
+        <input type="text" id="username" name="username" required minlength="4" pattern="[A-Za-z0-9]+" placeholder="No spaces or symbols" />
+
+        <label for="password">Password *</label>
+        <input type="password" id="password" name="password" required minlength="6" />
+
+        <label for="confirm">Confirm Password *</label>
+        <input type="password" id="confirm" name="confirm" required minlength="6" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label for="course">Select Your Course</label>
+        <select id="course" name="course" required>
+          <option value="">--Please choose an option--</option>
+          <option value="web">Web Development</option>
+          <option value="data">Data Science</option>
+          <option value="cyber">Cyber Security</option>
+        </select>
+
+        <label for="bio">Short Bio</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us a bit about yourself..."></textarea>
+
+        <label for="terms">
+          <input type="checkbox" id="terms" name="terms" required />
+          I agree to the <a href="#">Terms and Conditions</a>
+        </label>
+      </fieldset>
+
+      <input type="submit" value="Register" />
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Tatu Changaya | HTML5 Assignment</p>
+  </footer>
+
+</body>
+</html>
